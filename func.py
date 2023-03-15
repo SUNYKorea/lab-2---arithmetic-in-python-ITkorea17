@@ -33,8 +33,8 @@ a = 1
 b = -3
 c = 1
 
-x1 = div(add(), mult(2, a))
-x2 = ... # TODO: then do the same for the second root
+x1 = div(add(neg(b), sqrt(sub(exp(b, 2),mult(4, mult(a,c))))), mult(2, a))
+x2 = div(sub(neg(b), sqrt(sub(exp(b, 2),mult(4, mult(a,c))))), mult(2, a))
 # Note: Make sure to remove the ellipsis (...) when you're writing your code
 
 print("First root:" + str(x1))
